@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="basket">
+    <h1 class="basket__title">Корзина</h1>
+    <div class="basket__order">
+        <h2 class="title">Товары в корзине</h2>
+
+        <div class="basket__order-item">
+            <div class="image">
+                <img class="image" src="https://www.ikea.com/ru/ru/images/products/strandmon-kreslo-s-podgolovnikom-shiftebu-zheltyy__0325450_PE517970_S5.JPG?f=s"/>
+            </div>
+            <div class="name">Кресло</div>
+            <div class="price" id="price">10000</div>
+            <input id="down" type="button" value="-">
+            <label for="numericUpDown"><input class="count" type="text" id="numericUpDown" value="1"/></label>
+            <input id="up" type="button" value="+">
+        </div>
+        <div class="summ_price">
+            <div>Итого: </div>
+            <div id="sum">10000</div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="basket__info">
+        <h2 class="title">Данные получателя</h2>
+        <label class="basket__info-item">
+            <span class="label-text">Фамилия</span>
+            <input class="basket__info-item" type="text" tabindex>
+        </label>
+        <label class="basket__info-item">
+            <span class="label-text">Имя</span>
+            <input class="basket__info-item" type="text" tabindex>
+        </label>
+        <label class="basket__info-item">
+            <span class="label-text">Телефон</span>
+            <input class="basket__info-item" type="tel" tabindex>
+        </label>
+        <label class="basket__info-item">
+            <span class="label-text">E-mail</span>
+            <input class="basket__delivery-item" type="text" tabindex>
+        </label>
+    </div>
+    <hr>
+    <div class="basket__delivery">
+        <h2 class="title">Информация о доставке</h2>
+        <label class="basket__delivery-item">
+            <span class="label-text">Адрес доставки</span>
+            <input class="basket__delivery-item" type="text" tabindex>
+        </label>
+        <label class="basket__delivery-item">
+            <span class="label-text">Временной интервал</span>
+            <select class="basket__delivery-item" tabindex>
+                <option>10:00 - 14:00</option>
+                <option>14:00 - 18:00</option>
+                <option>18:00 - 22:00</option>
+            </select>
+        </label>
+        <label class="basket__delivery-item">
+            <span class="label-text">Комментарий к заказу</span>
+            <textarea class="basket__delivery-item" tabindex></textarea>
+        </label>
+    </div>
+    <hr>
+    <div class="basket__payment">
+        <h2 class="title">Способ оплаты</h2>
+        <label class="basket__payment-item">
+            <input type="radio" name="pay">
+            <span>Наличными</span>
+        </label>
+        <label class="basket__payment-item">
+            <input type="radio" name="pay">
+            <span>Онлайн</span>
+        </label>
+    </div>
+    <div class="btn">
+        <button class="btn">Заказать</button>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
